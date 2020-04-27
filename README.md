@@ -8,6 +8,9 @@ Setup a Hasura GraphQL engine and Postgres running on Heroku. Follow the instruc
 
 Secure your graphQL endpoint by setting the `HASURA_GRAPHQL_ADMIN_SECRET` environment variable in Heroku dashboard. See complete instructions [here](https://hasura.io/docs/1.0/graphql/manual/deployment/heroku/securing-graphql-endpoint.html#heroku-secure).
 
+Enable JWT mode by setting `HASURA_GRAPHQL_JWT_SECRET` environment variable from the heroku dashboard. The JWT Config to be used in env HASURA_GRAPHQL_JWT_SECRET for firebase can be generated using: https://hasura.io/jwt-config.
+The config generated from the above page can be directly pasted in for the value of `HASURA_GRAPHQL_JWT_SECRET` in config vars under heroku dashboard.
+
 ### Firebase
 
 1. Create a new firebase project in firebase console.
